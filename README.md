@@ -1,8 +1,9 @@
 # augment
-
-pip install -r requirement.txt   
-python demo_label_file.py
-
+- 自用的数据增强代码
+- 除了90，180，270旋转外都用到了augement库，因为旋转的时候它会截断边界，所以采用了opencv的方式    
+  pip install -r requirement.txt   
+  python demo_label_file.py
+-------------------------------------------------------------------------------------------
 
 - name 总的标签list
 name = ['person' ]   
