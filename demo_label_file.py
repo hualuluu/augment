@@ -4,11 +4,7 @@
 import os
 from utils.augment import Get_Augment
 
-name = [ 'bj', 'bj_bpmh', 'bj_bpps', 'bj_wkps', 'bjdsyc',
-    'byq_hxq', 'hxq_gjbs','hxq_gjtps', 'ywzt_yfyc', 'ywzt_yfzc',
-    'yw_gkxfw', 'yw_nc', 'gbps', 'sly_dmyw', 'jyz_pl',
-    'xmbhzc', 'xmbhyc', 'kgg_ybh', 'kgg_ybf','kgg_wyb',
-    'person', 'aqmzc', 'wcaqm', 'wcgz', 'gzzc', 'hand', 'hand_xy', 'xy' ]
+name = ['person']
 
 def get_start(name=name):
     name_dict = {}
@@ -37,11 +33,7 @@ if __name__ == "__main__":
                         'motionblur', 'mediablur', 'glassblur',
                         'randomsnow', 'randomrain', 'randomsunflare'}
 
-    select_label = {'bj', 'bj_bpmh', 'bj_bpps', 'bj_wkps', 'bjdsyc',
-    'byq_hxq', 'hxq_gjbs','hxq_gjtps', 'ywzt_yfyc', 'ywzt_yfzc',
-    'yw_gkxfw', 'yw_nc', 'gbps', 'sly_dmyw', 'jyz_pl',
-    'xmbhzc', 'xmbhyc', 'kgg_ybh', 'kgg_ybf','kgg_wyb',
-    'person', 'aqmzc', 'wcaqm', 'wcgz', 'gzzc', 'hand', 'hand_xy', 'xy'}
+    select_label = {'person'}
     for aug_type in select_aug_dict:
         # 初始化
         cfg = {
