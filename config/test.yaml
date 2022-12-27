@@ -1,0 +1,39 @@
+names: {'person': 0}
+category_id_to_name: {0: 'person'}
+
+#---------------CV_Rotate_Transformations------------------------
+rotateleft90: 1 #使用opencv 进行数据增强
+rotateleft180: 1
+rotateleft270: 1
+#---------------Geometric_Transformations------------------------
+flipud: 1  # 上下翻转
+fliplr: 1  # 左右翻转
+randomrotate: 1 # 随机旋转一定的角度
+rotate90: 1 # 旋转90度
+rotate180: 1 # 旋转180度
+rotate270: 1 # 旋转270度
+#---------------Size_Transformations------------------------
+resize: [512, 512] # h, w, resize 指定尺寸
+longesresize: 360 # 将长边resize到longesresize
+randomscale: 1 # 随机尺寸增强
+#---------------Crop_Transformations------------------------
+saferandomcrop: 1 # 随机安全裁剪，保证bbox是保留的
+
+#---------------HSV_Transformations------------------------
+randombrightness: 1 # 随机亮度
+randomhsv: 1 # 随机hsv
+colorjitter: 1 # 随机更改图片的亮度、对比度、饱和度、颜色
+randomrgb: 1 # 随机改变rgb, 三原色在原本基础上增加或者减小
+
+#---------------Perspective_Transformations------------------------
+perspective: 1 # 随机透视变换，并且把填充的背景至随机颜色
+
+#---------------Blur_Transformations------------------------
+motionblur: 1 # 随机动态滤波
+mediablur: 1 # 随机中值滤波
+glassblur: 1 # 随机Glass模糊
+
+#---------------Other_Transformations------------------------
+randomsnow: 1 # 随机模拟下雪
+randomrain: 1 # 随机模拟下雨
+randomsunflare: 1 # 随机模拟逆光

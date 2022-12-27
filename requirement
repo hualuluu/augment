@@ -1,0 +1,5 @@
+matplotlib
+numpy
+albumentations
+random
+opencv-python
